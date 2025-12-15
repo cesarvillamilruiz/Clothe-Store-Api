@@ -1,0 +1,210 @@
+[
+  {
+    "ContainingType": "ClotheStore.Api.Controllers.AddressController",
+    "Method": "Delete",
+    "RelativePath": "api/Address/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addressId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClotheStore.Api.Controllers.AddressController",
+    "Method": "Get",
+    "RelativePath": "api/Address/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClotheStore.Api.Controllers.AddressController",
+    "Method": "Insert",
+    "RelativePath": "api/Address/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ClotheStore.Application.ViewModels.AddressVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClotheStore.Api.Controllers.AddressController",
+    "Method": "Update",
+    "RelativePath": "api/Address/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ClotheStore.Application.ViewModels.AddressVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClotheStore.Api.Controllers.CartController",
+    "Method": "AddItem",
+    "RelativePath": "api/Cart/AddItem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClotheStore.Api.Controllers.CartController",
+    "Method": "AddItem",
+    "RelativePath": "api/Cart/AddItem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "ClotheStore.Application.ViewModels.CartItemVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClotheStore.Api.Controllers.CartController",
+    "Method": "DeleteItem",
+    "RelativePath": "api/Cart/DeleteItem",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cartItemId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClotheStore.Api.Controllers.CartController",
+    "Method": "UpdateItem",
+    "RelativePath": "api/Cart/UpdateItem",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "item",
+        "Type": "ClotheStore.Application.ViewModels.CartItemVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClotheStore.Api.Controllers.ContactPreferenceController",
+    "Method": "Get",
+    "RelativePath": "api/ContactPreference/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClotheStore.Api.Controllers.ContactPreferenceController",
+    "Method": "Insert",
+    "RelativePath": "api/ContactPreference/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contactPreference",
+        "Type": "ClotheStore.Application.ViewModels.ContactPreferenceVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClotheStore.Api.Controllers.ContactPreferenceController",
+    "Method": "Update",
+    "RelativePath": "api/ContactPreference/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contactPreference",
+        "Type": "ClotheStore.Application.ViewModels.ContactPreferenceVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClotheStore.Api.Controllers.LoginController",
+    "Method": "LogIn",
+    "RelativePath": "api/Login/LogIn",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClotheStore.Api.Controllers.OptionController",
+    "Method": "GetAllColors",
+    "RelativePath": "api/Option/GetAllColors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClotheStore.Api.Controllers.OptionController",
+    "Method": "GetAllSizes",
+    "RelativePath": "api/Option/GetAllSizes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClotheStore.Api.Controllers.WeatherForecastController",
+    "Method": "GetWeatherForecast",
+    "RelativePath": "api/WeatherForecast/GetWeatherForecast/GetWeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ClotheStore.Api.WeatherForecast, ClotheStore.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

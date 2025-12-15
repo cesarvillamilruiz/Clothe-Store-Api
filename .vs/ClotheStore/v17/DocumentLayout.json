@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC257C52-4BAA-4F2B-B1FA-5E6235D0BB56}|ClotheStore.Repository\\ClotheStore.Repository.csproj|d:\\desarrollo\\proyectos\\angularcustomtshirtdesigner\\newapi\\clothestoreapi\\clothestore.repository\\repositories\\optionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC257C52-4BAA-4F2B-B1FA-5E6235D0BB56}|ClotheStore.Repository\\ClotheStore.Repository.csproj|solutionrelative:clothestore.repository\\repositories\\optionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC257C52-4BAA-4F2B-B1FA-5E6235D0BB56}|ClotheStore.Repository\\ClotheStore.Repository.csproj|d:\\desarrollo\\proyectos\\angularcustomtshirtdesigner\\newapi\\clothestoreapi\\clothestore.repository\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC257C52-4BAA-4F2B-B1FA-5E6235D0BB56}|ClotheStore.Repository\\ClotheStore.Repository.csproj|solutionrelative:clothestore.repository\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC257C52-4BAA-4F2B-B1FA-5E6235D0BB56}|ClotheStore.Repository\\ClotheStore.Repository.csproj|d:\\desarrollo\\proyectos\\angularcustomtshirtdesigner\\newapi\\clothestoreapi\\clothestore.repository\\repositories\\cartitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC257C52-4BAA-4F2B-B1FA-5E6235D0BB56}|ClotheStore.Repository\\ClotheStore.Repository.csproj|solutionrelative:clothestore.repository\\repositories\\cartitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3528366E-9959-44F8-B55B-0F93C36475BB}|ClotheStore.Api\\ClotheStore.Api.csproj|d:\\desarrollo\\proyectos\\angularcustomtshirtdesigner\\newapi\\clothestoreapi\\clothestore.api\\controllers\\optioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3528366E-9959-44F8-B55B-0F93C36475BB}|ClotheStore.Api\\ClotheStore.Api.csproj|solutionrelative:clothestore.api\\controllers\\optioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77A6047C-EEEC-42E6-AA30-1E8D51362349}|ClotheStore.Application\\ClotheStore.Application.csproj|d:\\desarrollo\\proyectos\\angularcustomtshirtdesigner\\newapi\\clothestoreapi\\clothestore.application\\queries\\optionqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A6047C-EEEC-42E6-AA30-1E8D51362349}|ClotheStore.Application\\ClotheStore.Application.csproj|solutionrelative:clothestore.application\\queries\\optionqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14CF44C5-0392-4466-B544-BBB74FCEE082}|ClotheStore.Domain\\ClotheStore.Domain.csproj|d:\\desarrollo\\proyectos\\angularcustomtshirtdesigner\\newapi\\clothestoreapi\\clothestore.domain\\models\\option\\optionsize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14CF44C5-0392-4466-B544-BBB74FCEE082}|ClotheStore.Domain\\ClotheStore.Domain.csproj|solutionrelative:clothestore.domain\\models\\option\\optionsize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Repository\\Context\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ClotheStore.Repository\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Repository\\Context\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ClotheStore.Repository\\Context\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAASwC4AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T01:12:53.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OptionController.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Api\\Controllers\\OptionController.cs",
+              "RelativeDocumentMoniker": "ClotheStore.Api\\Controllers\\OptionController.cs",
+              "ToolTip": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Api\\Controllers\\OptionController.cs",
+              "RelativeToolTip": "ClotheStore.Api\\Controllers\\OptionController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T03:52:21.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartItemRepository.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Repository\\Repositories\\CartItemRepository.cs",
+              "RelativeDocumentMoniker": "ClotheStore.Repository\\Repositories\\CartItemRepository.cs",
+              "ToolTip": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Repository\\Repositories\\CartItemRepository.cs",
+              "RelativeToolTip": "ClotheStore.Repository\\Repositories\\CartItemRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T03:47:16.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OptionSize.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Domain\\Models\\Option\\OptionSize.cs",
+              "RelativeDocumentMoniker": "ClotheStore.Domain\\Models\\Option\\OptionSize.cs",
+              "ToolTip": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Domain\\Models\\Option\\OptionSize.cs",
+              "RelativeToolTip": "ClotheStore.Domain\\Models\\Option\\OptionSize.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T02:13:15.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OptionRepository.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Repository\\Repositories\\OptionRepository.cs",
+              "RelativeDocumentMoniker": "ClotheStore.Repository\\Repositories\\OptionRepository.cs",
+              "ToolTip": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Repository\\Repositories\\OptionRepository.cs",
+              "RelativeToolTip": "ClotheStore.Repository\\Repositories\\OptionRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T02:55:22.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OptionQueryService.cs",
+              "DocumentMoniker": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Application\\Queries\\OptionQueryService.cs",
+              "RelativeDocumentMoniker": "ClotheStore.Application\\Queries\\OptionQueryService.cs",
+              "ToolTip": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Application\\Queries\\OptionQueryService.cs",
+              "RelativeToolTip": "ClotheStore.Application\\Queries\\OptionQueryService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAYAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T02:53:09.382Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

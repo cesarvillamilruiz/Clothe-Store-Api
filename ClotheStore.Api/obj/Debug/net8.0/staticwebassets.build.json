@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "PmQ2zKTbIeV42mWgQYb04sI6qpVfFkQSIgR67yNWfnI=",
+  "Source": "ClotheStore.Api",
+  "BasePath": "_content/ClotheStore.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

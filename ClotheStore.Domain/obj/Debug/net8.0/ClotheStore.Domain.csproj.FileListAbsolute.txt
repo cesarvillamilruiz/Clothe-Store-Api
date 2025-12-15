@@ -1,0 +1,11 @@
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Domain\bin\Debug\net8.0\ClotheStore.Domain.deps.json
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Domain\bin\Debug\net8.0\ClotheStore.Domain.dll
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Domain\bin\Debug\net8.0\ClotheStore.Domain.pdb
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Domain\obj\Debug\net8.0\ClotheStore.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Domain\obj\Debug\net8.0\ClotheStore.Domain.AssemblyInfoInputs.cache
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Domain\obj\Debug\net8.0\ClotheStore.Domain.AssemblyInfo.cs
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Domain\obj\Debug\net8.0\ClotheStore.Domain.csproj.CoreCompileInputs.cache
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Domain\obj\Debug\net8.0\ClotheStore.Domain.dll
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Domain\obj\Debug\net8.0\refint\ClotheStore.Domain.dll
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Domain\obj\Debug\net8.0\ClotheStore.Domain.pdb
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Domain\obj\Debug\net8.0\ref\ClotheStore.Domain.dll

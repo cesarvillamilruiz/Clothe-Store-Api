@@ -1,0 +1,17 @@
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Repository\bin\Debug\net8.0\ClotheStore.Repository.deps.json
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Repository\bin\Debug\net8.0\ClotheStore.Repository.runtimeconfig.json
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Repository\bin\Debug\net8.0\ClotheStore.Repository.dll
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Repository\bin\Debug\net8.0\ClotheStore.Repository.pdb
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Repository\bin\Debug\net8.0\ClotheStore.Domain.dll
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Repository\bin\Debug\net8.0\ClotheStore.Domain.pdb
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Repository\obj\Debug\net8.0\ClotheStore.Repository.csproj.AssemblyReference.cache
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Repository\obj\Debug\net8.0\ClotheStore.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Repository\obj\Debug\net8.0\ClotheStore.Repository.AssemblyInfoInputs.cache
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Repository\obj\Debug\net8.0\ClotheStore.Repository.AssemblyInfo.cs
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Repository\obj\Debug\net8.0\ClotheStore.Repository.csproj.CoreCompileInputs.cache
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Repository\obj\Debug\net8.0\ClotheSt.54E0A296.Up2Date
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Repository\obj\Debug\net8.0\ClotheStore.Repository.dll
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Repository\obj\Debug\net8.0\refint\ClotheStore.Repository.dll
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Repository\obj\Debug\net8.0\ClotheStore.Repository.pdb
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Repository\obj\Debug\net8.0\ClotheStore.Repository.genruntimeconfig.cache
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Repository\obj\Debug\net8.0\ref\ClotheStore.Repository.dll
