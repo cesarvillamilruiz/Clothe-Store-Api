@@ -22,8 +22,9 @@ namespace ClotheStore.Repository.Context
         public virtual DbSet<ContactPreference> ContactPreference { get; set; }
         public virtual DbSet<CartItem> CartItem { get; set; }
         public virtual DbSet<Customization> Customization { get; set; }
-        public virtual DbSet<Color> Color { get; set; }
-        public virtual DbSet<OptionSize> SizeOption { get; set; }
+        public virtual DbSet<OptionColor> OptionColor { get; set; }
+        public virtual DbSet<OptionSize> OptionSize { get; set; }
+        public virtual DbSet<OptionFont> OptionFont { get; set; }
         #endregion DbSet Properties
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -40,11 +41,6 @@ namespace ClotheStore.Repository.Context
             {
                 entity.Ignore(e => e.CreatedAt);
                 entity.Ignore(e => e.UpdatedAt);
-            });
-
-            modelBuilder.Entity<Color>(entity =>
-            {
-                entity.HasKey(x => new { x.ColorId, x.ComponentName });
             });
 
             base.OnModelCreating(modelBuilder);
@@ -83,13 +79,16 @@ namespace ClotheStore.Repository.Context
                             case CartItem CartItem:
                                 entityDataHandler = new CartItemEntityDataHandler(this);
                                 break;
-                            case Color Color:
+                            case OptionColor Color:
                                 entityDataHandler = new ColorEntityDataHandler(this);
                                 break;
                             case Customization Customization:
                                 entityDataHandler = new CustomizationEntityDataHandler(this);
                                 break;
-                            case OptionSize Size:
+                            case OptionFont OptionFont:
+                                entityDataHandler = new FontEntityDataHandler(this);
+                                break;
+                            case OptionSize OptionSize:
                                 entityDataHandler = new SizeEntityDataHandler(this);
                                 break;
                             default:

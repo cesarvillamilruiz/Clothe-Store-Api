@@ -9,3 +9,4 @@ D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\Clothe
 D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Domain\obj\Debug\net8.0\refint\ClotheStore.Domain.dll
 D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Domain\obj\Debug\net8.0\ClotheStore.Domain.pdb
 D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Domain\obj\Debug\net8.0\ref\ClotheStore.Domain.dll
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Domain\obj\Debug\net8.0\ClotheStore.Domain.sourcelink.json

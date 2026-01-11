@@ -305,6 +305,39 @@
         }
       }
     },
+    "/api/Option/GetProductsByCategoryName": {
+      "get": {
+        "tags": [
+          "Option"
+        ],
+        "parameters": [
+          {
+            "name": "categoryName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Option/GetFonts": {
+      "get": {
+        "tags": [
+          "Option"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/WeatherForecast/GetWeatherForecast/GetWeatherForecast": {
       "get": {
         "tags": [

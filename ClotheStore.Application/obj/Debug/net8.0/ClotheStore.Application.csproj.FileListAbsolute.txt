@@ -13,3 +13,4 @@ D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\Clothe
 D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Application\obj\Debug\net8.0\refint\ClotheStore.Application.dll
 D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Application\obj\Debug\net8.0\ClotheStore.Application.pdb
 D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Application\obj\Debug\net8.0\ref\ClotheStore.Application.dll
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Application\obj\Debug\net8.0\ClotheStore.Application.sourcelink.json

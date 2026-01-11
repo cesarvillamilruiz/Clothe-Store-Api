@@ -1,11 +1,11 @@
 ﻿namespace ClotheStore.Application.ViewModels
 {
-    public class ColorVM
+    public class OptionProductVM
     {
+        public Guid OptionProductId { get; set; }
         public Guid ColorId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public string Hexadecimal { get; set; }
-        public string ComponentName { get; set; }
+        public double BasePrice { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace ClotheStore.Application.ViewModels
 {
-    public class SizeOptionVM
+    public class OptionSizeVM
     {
         public Guid OptionSizeId { get; set; }
         public string Name { get; set; }

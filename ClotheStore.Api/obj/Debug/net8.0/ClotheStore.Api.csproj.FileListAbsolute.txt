@@ -186,3 +186,4 @@ D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\Clothe
 D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Api\obj\Debug\net8.0\ClotheStore.Api.pdb
 D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Api\obj\Debug\net8.0\ClotheStore.Api.genruntimeconfig.cache
 D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Api\obj\Debug\net8.0\ref\ClotheStore.Api.dll
+D:\Desarrollo\Proyectos\AngularCustomTShirtDesigner\NewApi\ClotheStoreApi\ClotheStore.Api\obj\Debug\net8.0\ClotheStore.Api.sourcelink.json

@@ -188,6 +188,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ClotheStore.Api.Controllers.OptionController",
+    "Method": "GetFonts",
+    "RelativePath": "api/Option/GetFonts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClotheStore.Api.Controllers.OptionController",
+    "Method": "GetProductsByCategoryName",
+    "RelativePath": "api/Option/GetProductsByCategoryName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ClotheStore.Api.Controllers.WeatherForecastController",
     "Method": "GetWeatherForecast",
     "RelativePath": "api/WeatherForecast/GetWeatherForecast/GetWeatherForecast",
