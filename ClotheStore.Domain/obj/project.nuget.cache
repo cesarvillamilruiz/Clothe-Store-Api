@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/87/MBFCFuA=",
+  "dgSpecHash": "353Fmqs7ru4=",
   "success": true,
-  "projectFilePath": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Domain\\ClotheStore.Domain.csproj",
+  "projectFilePath": "C:\\Desarrollo\\Clothe-Store\\Clothe-Store-Api\\ClotheStore.Domain\\ClotheStore.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

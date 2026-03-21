@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1NC9Khd9L2Q=",
+  "dgSpecHash": "6tJwkT7vduI=",
   "success": true,
-  "projectFilePath": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Repository\\ClotheStore.Repository.csproj",
+  "projectFilePath": "C:\\Desarrollo\\Clothe-Store\\Clothe-Store-Api\\ClotheStore.Repository\\ClotheStore.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cesar\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\cesar\\.nuget\\packages\\azure.identity\\1.11.3\\azure.identity.1.11.3.nupkg.sha512",
@@ -67,12 +67,5 @@
     "C:\\Users\\cesar\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
     "C:\\Users\\cesar\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: A task was canceled."
-    }
-  ]
+  "logs": []
 }

@@ -4,6 +4,8 @@ using ClotheStore.Domain.Core;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Identity.Web;
 using Microsoft.EntityFrameworkCore;
+using Azure.Identity;
+using Azure.Storage.Blobs;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -43,6 +45,25 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSingleton(x =>
+{
+    //var configuration = x.GetRequiredService<IConfiguration>();
+
+    //var accountName = configuration["AzureStorage:AccountName"];
+    //var tenantId = configuration["AzureStorage:TenantId"];
+
+    //var uri = new Uri($"https://{accountName}.blob.core.windows.net");
+
+    //var credential = new DefaultAzureCredential(
+    //    new DefaultAzureCredentialOptions
+    //    {
+    //        TenantId = tenantId
+    //    });
+
+    return new BlobServiceClient(
+        new Uri("https://privatedesign.blob.core.windows.net"),
+        new DefaultAzureCredential());
+});
 
 var app = builder.Build();
 

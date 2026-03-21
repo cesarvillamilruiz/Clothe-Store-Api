@@ -21,6 +21,7 @@ namespace ClotheStore.Application.Commands
             }
 
             var entity = model.Adapt<CartItem>();
+            entity.CartItemId = new Guid();
             unitOfWork.CartItem.Insert(entity);
             await unitOfWork.SaveChangesAsync();
 

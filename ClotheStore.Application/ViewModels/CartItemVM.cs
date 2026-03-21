@@ -4,8 +4,13 @@
     {
         public Guid CartItemId { get; set; }
         public Guid ProductId { get; set; }
-        public string Name { get; set; }
-        public IEnumerable<SizeVM> InventorySet { get; set; }
-        public IEnumerable<CustomizationVM> Customization { get; set; }
+        public string? Name { get; set; }
+        public int SAmount { get; set; }
+        public int MAmount { get; set; }
+        public int LAmount { get; set; }
+        public int XLAmount { get; set; }
+        public int XXLAmount { get; set; }
+        public int XXXLAmount { get; set; }
+        public IEnumerable<CustomizationVM>? Customization { get; set; }
     }
 }

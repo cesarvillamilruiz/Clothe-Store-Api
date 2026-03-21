@@ -1,4 +1,4 @@
-﻿using ClotheStore.Domain.Models.Item;
+﻿using ClotheStore.Domain.Models.Customization;
 using ClotheStore.Repository.Context;
 using ClotheStore.Repository.Helper;
 using ClotheStore.Repository.Repositories;
@@ -8,7 +8,8 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace ClotheStore.Repository.EntityDataHandlers
 {
-    public class CustomizationEntityDataHandler(ApplicationDbContext context) : GenericRepository(context), IEntityDataHandler
+    public class CustomizationEntityDataHandler(ApplicationDbContext context) :
+        GenericRepository(context), IEntityDataHandler
     {
         public async Task<object> Insert(object entry)
         {
@@ -16,34 +17,37 @@ namespace ClotheStore.Repository.EntityDataHandlers
             var model = entityEntry.Entity as Customization;
 
             var parameters = new SqlParameter[]
-                {
-                    new("@CustomizationId", model.CustomizationId),
-                    new("@CartItemId", model.CartItemId),
-                    new("@IsHorizontalInverted", model.IsHorizontalInverted),
-                    new("@IsVerticalInverted", model.IsVerticalInverted),
-                    new("@ZIndex", model.ZIndex),
-                    new("@IsFrontLocation", model.IsFrontLocation),
-                    new("@TopDistance", model.TopDistance),
-                    new("@LeftDistance", model.LeftDistance),
-                    new("@Type", model.Type),
+            {
+                // Customization
+                new("@CartItemId", model!.CartItemId),
+                new("@IsHorizontalInverted", model.IsHorizontalInverted),
+                new("@IsVerticalInverted", model.IsVerticalInverted),
+                new("@IsFrontLocation", model.IsFrontLocation),
+                new("@ZIndex", model.ZIndex),
+                new("@TopDistance", model.TopDistance),
+                new("@LeftDistance", model.LeftDistance),
+                new("@Type", model.Type),
 
-                    //Text section
-                    new("@Text", model.Text),
-                    new("@FontFamily", model.FontFamily),
-                    new("@FontSize", model.FontSize),                    
-                    new("@FontColorId", model.FontColorId),
-                    new("@OutlineFontColorId", model.OutlineFontColorId),                    
-                    new("@Arch", model.Arch),
+                // Image
+                new("@BlobName", model.BlobName),
+                new("@BlobUrl", model.BlobUrl),
+                new("@ImageType", model.ImageType),
+                new("@Category", model.Category),
 
-                    //Image section
-                    new("@ImageUrl", model.ImageUrl),
-                    new("@DesignId", model.DesignId),
-                    new("@ImageType", model.ImageType),
-                    new("@Width", model.Width),
-                    new("@Height", model.Height)
-                };
+                // CustomizationImage
+                new("@Width", model.Width),
+                new("@Height", model.Height),
 
-            var newModel = await InsertAsync<Customization>($"dbo.sp_Insert_Design {QueryHelper.GetParameters(parameters)}", parameters);
+                // Text
+                new("@FontId", model.FontId),
+                new("@Text", model.Text),
+                new("@FontSize", model.FontSize),
+                new("@FontColorId", model.FontColorId),
+                new("@OutlineFontColorId", model.OutlineFontColorId),
+                new("@Arch", model.Arch)
+            };
+
+            var newModel = await InsertAsync<Customization>($"dbo.sp_InsertCustomization {QueryHelper.GetParameters(parameters)}", parameters);
             RefreshContext(model, newModel);
             return newModel;
         }
@@ -54,34 +58,37 @@ namespace ClotheStore.Repository.EntityDataHandlers
             var model = entityEntry.Entity as Customization;
 
             var parameters = new SqlParameter[]
-                {
-                    new("@CustomizationId", model.CustomizationId),
-                    new("@CartItemId", model.CartItemId),
-                    new("@IsHorizontalInverted", model.IsHorizontalInverted),
-                    new("@IsVerticalInverted", model.IsVerticalInverted),
-                    new("@ZIndex", model.ZIndex),
-                    new("@IsFrontLocation", model.IsFrontLocation),
-                    new("@TopDistance", model.TopDistance),
-                    new("@LeftDistance", model.LeftDistance),
-                    new("@Type", model.Type),
+            {
+                // Customization
+                new("@CartItemId", model!.CartItemId),
+                new("@IsHorizontalInverted", model.IsHorizontalInverted),
+                new("@IsVerticalInverted", model.IsVerticalInverted),
+                new("@IsFrontLocation", model.IsFrontLocation),
+                new("@ZIndex", model.ZIndex),
+                new("@TopDistance", model.TopDistance),
+                new("@LeftDistance", model.LeftDistance),
+                new("@Type", model.Type),
 
-                    //Text section
-                    new("@Text", model.Text),
-                    new("@FontFamily", model.FontFamily),
-                    new("@FontSize", model.FontSize),
-                    new("@FontColorId", model.FontColorId),
-                    new("@OutlineFontColorId", model.OutlineFontColorId),
-                    new("@Arch", model.Arch),
+                // Image
+                new("@BlobName", model.BlobName),
+                new("@BlobUrl", model.BlobUrl),
+                new("@ImageType", model.ImageType),
+                new("@Category", model.Category),
 
-                    //Image section
-                    new("@ImageUrl", model.ImageUrl),
-                    new("@DesignId", model.DesignId),
-                    new("@ImageType", model.ImageType),
-                    new("@Width", model.Width),
-                    new("@Height", model.Height)
-                };
+                // CustomizationImage
+                new("@Width", model.Width),
+                new("@Height", model.Height),
 
-            var newModel = await UpdateAsync<Customization>($"dbo.sp_Update_Design {QueryHelper.GetParameters(parameters)}", parameters);
+                // Text
+                new("@FontId", model.FontId),
+                new("@Text", model.Text),
+                new("@FontSize", model.FontSize),
+                new("@FontColorId", model.FontColorId),
+                new("@OutlineFontColorId", model.OutlineFontColorId),
+                new("@Arch", model.Arch)
+            };
+
+            var newModel = await UpdateAsync<Customization>($"dbo.sp_UpdateCustomization {QueryHelper.GetParameters(parameters)}", parameters);
             RefreshContext(model, newModel);
             return newModel;
         }

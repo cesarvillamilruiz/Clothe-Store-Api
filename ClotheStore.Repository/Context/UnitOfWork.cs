@@ -1,4 +1,5 @@
-﻿using ClotheStore.Domain.Repositories;
+﻿using ClotheStore.Domain.Models.Design;
+using ClotheStore.Domain.Repositories;
 using ClotheStore.Repository.Repositories;
 
 namespace ClotheStore.Repository.Context
@@ -7,7 +8,8 @@ namespace ClotheStore.Repository.Context
     {
         private IAddressRepository? _address;
         private IContactPreferenceRepository? _contactPreference;
-        private ICartItemRepository _cartItem;
+        private ICartItemRepository? _cartItem;
+        private IDesignRepository? _design;
 
         public IAddressRepository Address =>
             _address ??= new AddressRepository(context, repository);
@@ -17,6 +19,9 @@ namespace ClotheStore.Repository.Context
 
         public ICartItemRepository CartItem =>
             _cartItem ??= new CartItemRepository(context, repository);
+
+        public IDesignRepository Design =>
+            _design ??= new DesignRepository(context, repository);
 
         public Task<int> SaveChangesAsync() => context.SaveChangesAsync();
 

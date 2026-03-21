@@ -1,6 +1,9 @@
 ﻿using ClotheStore.Domain.Models.Address;
+using ClotheStore.Domain.Models.Blob;
 using ClotheStore.Domain.Models.Color;
 using ClotheStore.Domain.Models.ContactPreference;
+using ClotheStore.Domain.Models.Customization;
+using ClotheStore.Domain.Models.Design;
 using ClotheStore.Domain.Models.Item;
 using ClotheStore.Domain.Models.Option;
 using ClotheStore.Domain.Models.User;
@@ -22,9 +25,12 @@ namespace ClotheStore.Repository.Context
         public virtual DbSet<ContactPreference> ContactPreference { get; set; }
         public virtual DbSet<CartItem> CartItem { get; set; }
         public virtual DbSet<Customization> Customization { get; set; }
+        public virtual DbSet<Image> Image { get; set; }
         public virtual DbSet<OptionColor> OptionColor { get; set; }
         public virtual DbSet<OptionSize> OptionSize { get; set; }
         public virtual DbSet<OptionFont> OptionFont { get; set; }
+        public virtual DbSet<Design> Design { get; set; }
+
         #endregion DbSet Properties
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -78,12 +84,18 @@ namespace ClotheStore.Repository.Context
                                 break;
                             case CartItem CartItem:
                                 entityDataHandler = new CartItemEntityDataHandler(this);
-                                break;
+                                break;                            
                             case OptionColor Color:
                                 entityDataHandler = new ColorEntityDataHandler(this);
                                 break;
                             case Customization Customization:
                                 entityDataHandler = new CustomizationEntityDataHandler(this);
+                                break;
+                            case Design Design:
+                                entityDataHandler = new DesignEntityDataHandler(this);
+                                break;
+                            case Image Image:
+                                entityDataHandler = new ImageEntityDataHandler(this);
                                 break;
                             case OptionFont OptionFont:
                                 entityDataHandler = new FontEntityDataHandler(this);

@@ -58,6 +58,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ClotheStore.Api.Controllers.BlobController",
+    "Method": "GetUploadUrl",
+    "RelativePath": "api/Blob/GetUploadUrl",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ClotheStore.Api.Controllers.CartController",
     "Method": "AddItem",
     "RelativePath": "api/Cart/AddItem",
@@ -199,6 +215,16 @@
   },
   {
     "ContainingType": "ClotheStore.Api.Controllers.OptionController",
+    "Method": "GetPreDesigns",
+    "RelativePath": "api/Option/GetPreDesigns",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClotheStore.Api.Controllers.OptionController",
     "Method": "GetProductsByCategoryName",
     "RelativePath": "api/Option/GetProductsByCategoryName",
     "HttpMethod": "GET",
@@ -212,25 +238,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ClotheStore.Api.Controllers.WeatherForecastController",
-    "Method": "GetWeatherForecast",
-    "RelativePath": "api/WeatherForecast/GetWeatherForecast/GetWeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[ClotheStore.Api.WeatherForecast, ClotheStore.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
   }
 ]

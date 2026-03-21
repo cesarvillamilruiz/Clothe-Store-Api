@@ -17,11 +17,16 @@ namespace ClotheStore.Repository.EntityDataHandlers
 
             var parameters = new SqlParameter[]
             {
-                new("@CartItemId", model.CartItemId),
+                new("@CartItemId", model!.CartItemId),
                 new("@UserId", model.UserId),
                 new("@ProductId", model.ProductId),
                 new("@Name", model.Name),
-                new("@OptionSize", model.Size)
+                new("@SAmount", model.SAmount),
+                new("@MAmount", model.MAmount),
+                new("@LAmount", model.LAmount),
+                new("@XLAmount", model.XLAmount),
+                new("@XXLAmount", model.XXLAmount),
+                new("@XXXLAmount", model.XXXLAmount)
             };
 
             var newModel = await InsertAsync<CartItem>($"dbo.sp_InsertContactPreference {QueryHelper.GetParameters(parameters)}", parameters);
@@ -36,11 +41,16 @@ namespace ClotheStore.Repository.EntityDataHandlers
 
             var parameters = new SqlParameter[]
             {
-                new("@CartItemId", model.CartItemId),
+                new("@CartItemId", model!.CartItemId),
                 new("@UserId", model.UserId),
                 new("@ProductId", model.ProductId),
                 new("@Name", model.Name),
-                new("@OptionSize", model.Size)
+                new("@SAmount", model.SAmount),
+                new("@MAmount", model.MAmount),
+                new("@LAmount", model.LAmount),
+                new("@XLAmount", model.XLAmount),
+                new("@XXLAmount", model.XXLAmount),
+                new("@XXXLAmount", model.XXXLAmount)
             };
 
             var newModel = await UpdateAsync<CartItem>($"dbo.sp_UpdateCartItem {QueryHelper.GetParameters(parameters)}", parameters);

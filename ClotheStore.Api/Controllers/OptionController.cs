@@ -27,5 +27,9 @@ namespace ClotheStore.Api.Controllers
         [HttpGet]
         public async Task<Results<BadRequest, NotFound, Ok<IEnumerable<OptionFontVM>>>> GetFonts() =>
             TypedResults.Ok(await optionQueryService.GetFonts());
+
+        [HttpGet]
+        public async Task<Results<BadRequest, NotFound, Ok<IEnumerable<OptionPreDesignVM>>>> GetPreDesigns() =>
+            TypedResults.Ok(await optionQueryService.GetPreDesigns());
     }
 }

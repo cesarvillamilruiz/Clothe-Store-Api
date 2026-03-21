@@ -9,5 +9,6 @@ namespace ClotheStore.Domain.Repositories
         Task<IEnumerable<OptionSize>> GetAllSizes();
         Task<IEnumerable<OptionProduct>> GetProductsByCategoryName(string categoryName);
         Task<IEnumerable<OptionFont>> GetFonts();
+        Task<IEnumerable<OptionPreDesign>> GetPreDesigns();
     }
 }

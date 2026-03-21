@@ -1,11 +1,13 @@
-﻿using ClotheStore.Domain.Models.Item;
+﻿using ClotheStore.Domain.Models.Design;
 
 namespace ClotheStore.Domain.Repositories
 {
     public interface IDesignRepository
     {
-        void Insert(CartItem model);
-        void Update(CartItem model);
-        void Delete(CartItem model);
+        Task<Design> GetDesignById(Guid designId);
+        Task<IEnumerable<Design>> GetDesignsByUserId(Guid userId);
+        void Insert(Design model);
+        void Update(Design model);
+        void Delete(Design model);
     }
 }

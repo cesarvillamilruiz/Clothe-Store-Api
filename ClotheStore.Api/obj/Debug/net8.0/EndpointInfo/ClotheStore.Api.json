@@ -101,6 +101,38 @@
         }
       }
     },
+    "/api/Blob/GetUploadUrl": {
+      "post": {
+        "tags": [
+          "Blob"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Image": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Image": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Cart/AddItem": {
       "get": {
         "tags": [
@@ -338,40 +370,14 @@
         }
       }
     },
-    "/api/WeatherForecast/GetWeatherForecast/GetWeatherForecast": {
+    "/api/Option/GetPreDesigns": {
       "get": {
         "tags": [
-          "WeatherForecast"
+          "Option"
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -461,12 +467,29 @@
             "type": "string",
             "nullable": true
           },
-          "inventorySet": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/SizeVM"
-            },
-            "nullable": true
+          "sAmount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mAmount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lAmount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "xlAmount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "xxlAmount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "xxxlAmount": {
+            "type": "integer",
+            "format": "int32"
           },
           "customization": {
             "type": "array",
@@ -516,31 +539,12 @@
         },
         "additionalProperties": false
       },
-      "CustomizationType": {
-        "enum": [
-          "Text",
-          "Image"
-        ],
-        "type": "string"
-      },
       "CustomizationVM": {
         "type": "object",
         "properties": {
-          "customizationId": {
-            "type": "string",
-            "format": "uuid"
-          },
           "cartItemId": {
             "type": "string",
             "format": "uuid"
-          },
-          "text": {
-            "type": "string",
-            "nullable": true
-          },
-          "zIndex": {
-            "type": "integer",
-            "format": "int32"
           },
           "isHorizontalInverted": {
             "type": "boolean"
@@ -548,35 +552,10 @@
           "isVerticalInverted": {
             "type": "boolean"
           },
-          "fontFamily": {
-            "type": "string",
-            "nullable": true
+          "isFrontLocation": {
+            "type": "boolean"
           },
-          "fontColorId": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "fontSize": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "outlineFontColorId": {
-            "type": "string",
-            "nullable": true
-          },
-          "designId": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "imageUrl": {
-            "type": "string",
-            "nullable": true
-          },
-          "width": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "height": {
+          "zIndex": {
             "type": "integer",
             "format": "int32"
           },
@@ -588,55 +567,63 @@
             "type": "integer",
             "format": "int32"
           },
-          "arch": {
-            "type": "integer",
-            "format": "int32"
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "blobName": {
+            "type": "string",
+            "nullable": true
+          },
+          "blobUrl": {
+            "type": "string",
+            "nullable": true
           },
           "imageType": {
             "type": "string",
             "nullable": true
           },
-          "type": {
-            "$ref": "#/components/schemas/CustomizationType"
-          },
-          "isFrontLocation": {
-            "type": "boolean"
-          }
-        },
-        "additionalProperties": false
-      },
-      "SizeVM": {
-        "type": "object",
-        "properties": {
-          "sizeId": {
+          "category": {
             "type": "string",
-            "format": "uuid"
+            "nullable": true
           },
-          "amount": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "WeatherForecast": {
-        "type": "object",
-        "properties": {
-          "date": {
-            "type": "string",
-            "format": "date"
-          },
-          "temperatureC": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "temperatureF": {
+          "width": {
             "type": "integer",
             "format": "int32",
-            "readOnly": true
+            "nullable": true
           },
-          "summary": {
+          "height": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fontId": {
             "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "text": {
+            "type": "string",
+            "nullable": true
+          },
+          "fontSize": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fontColorId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "outlineFontColorId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "arch": {
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           }
         },

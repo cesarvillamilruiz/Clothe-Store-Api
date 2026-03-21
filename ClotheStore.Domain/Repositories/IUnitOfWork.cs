@@ -5,7 +5,7 @@
         IAddressRepository Address { get; }
         IContactPreferenceRepository ContactPreference { get; }
         ICartItemRepository CartItem { get; }
-
+        IDesignRepository Design { get; }
         Task<int> SaveChangesAsync();
     }
 }

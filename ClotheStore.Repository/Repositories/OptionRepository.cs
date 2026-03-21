@@ -45,5 +45,11 @@ namespace ClotheStore.Repository.Repositories
             return await repository.GetAllAsync<OptionFont>("dbo.sp_GetFont");
             //if (result.Any()) context.OptionFont.AttachRange(result);
         }
+
+        public async Task<IEnumerable<OptionPreDesign>> GetPreDesigns()
+        {
+            return await repository.GetAllAsync<OptionPreDesign>("dbo.sp_GetPreDesign");
+            //if (result.Any()) context.OptionFont.AttachRange(result);
+        }
     }
 }

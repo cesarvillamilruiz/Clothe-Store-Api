@@ -1,5 +1,4 @@
 ﻿using ClotheStore.Application.ViewModels;
-using ClotheStore.Domain.Models.Option;
 using ClotheStore.Domain.Repositories;
 using Mapster;
 
@@ -29,6 +28,12 @@ namespace ClotheStore.Application.Queries
         {
             var result = await optionRepository.GetFonts();
             return result.Adapt<IEnumerable<OptionFontVM>>();
+        }
+
+        public async Task<IEnumerable<OptionPreDesignVM>> GetPreDesigns()
+        {
+            var result = await optionRepository.GetPreDesigns();
+            return result.Adapt<IEnumerable<OptionPreDesignVM>>();
         }
     }
 }

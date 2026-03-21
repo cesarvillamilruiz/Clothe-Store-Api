@@ -9,5 +9,6 @@ namespace ClotheStore.Application.Queries
         Task<IEnumerable<OptionSizeVM>> GetAllSizes();
         Task<IEnumerable<OptionProductVM>> GetProductsByCategoryName(string categoryName);
         Task<IEnumerable<OptionFontVM>> GetFonts();
+        Task<IEnumerable<OptionPreDesignVM>> GetPreDesigns();
     }
 }

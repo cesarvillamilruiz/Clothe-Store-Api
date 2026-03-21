@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Application\\ClotheStore.Application.csproj": {}
+    "C:\\Desarrollo\\Clothe-Store\\Clothe-Store-Api\\ClotheStore.Application\\ClotheStore.Application.csproj": {}
   },
   "projects": {
-    "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Application\\ClotheStore.Application.csproj": {
+    "C:\\Desarrollo\\Clothe-Store\\Clothe-Store-Api\\ClotheStore.Application\\ClotheStore.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Application\\ClotheStore.Application.csproj",
+        "projectUniqueName": "C:\\Desarrollo\\Clothe-Store\\Clothe-Store-Api\\ClotheStore.Application\\ClotheStore.Application.csproj",
         "projectName": "ClotheStore.Application",
-        "projectPath": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Application\\ClotheStore.Application.csproj",
+        "projectPath": "C:\\Desarrollo\\Clothe-Store\\Clothe-Store-Api\\ClotheStore.Application\\ClotheStore.Application.csproj",
         "packagesPath": "C:\\Users\\cesar\\.nuget\\packages\\",
-        "outputPath": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Application\\obj\\",
+        "outputPath": "C:\\Desarrollo\\Clothe-Store\\Clothe-Store-Api\\ClotheStore.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://lefgit.pkgs.visualstudio.com/_packaging/LifeExtensionFeed/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Domain\\ClotheStore.Domain.csproj": {
-                "projectPath": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Domain\\ClotheStore.Domain.csproj"
+              "C:\\Desarrollo\\Clothe-Store\\Clothe-Store-Api\\ClotheStore.Domain\\ClotheStore.Domain.csproj": {
+                "projectPath": "C:\\Desarrollo\\Clothe-Store\\Clothe-Store-Api\\ClotheStore.Domain\\ClotheStore.Domain.csproj"
               }
             }
           }
@@ -55,6 +54,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.27.0, )"
+            },
             "Mapster": {
               "target": "Package",
               "version": "[7.4.0, )"
@@ -70,6 +73,10 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.1, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[10.0.3, )"
             }
           },
           "imports": [
@@ -92,14 +99,14 @@
         }
       }
     },
-    "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Domain\\ClotheStore.Domain.csproj": {
+    "C:\\Desarrollo\\Clothe-Store\\Clothe-Store-Api\\ClotheStore.Domain\\ClotheStore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Domain\\ClotheStore.Domain.csproj",
+        "projectUniqueName": "C:\\Desarrollo\\Clothe-Store\\Clothe-Store-Api\\ClotheStore.Domain\\ClotheStore.Domain.csproj",
         "projectName": "ClotheStore.Domain",
-        "projectPath": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Domain\\ClotheStore.Domain.csproj",
+        "projectPath": "C:\\Desarrollo\\Clothe-Store\\Clothe-Store-Api\\ClotheStore.Domain\\ClotheStore.Domain.csproj",
         "packagesPath": "C:\\Users\\cesar\\.nuget\\packages\\",
-        "outputPath": "D:\\Desarrollo\\Proyectos\\AngularCustomTShirtDesigner\\NewApi\\ClotheStoreApi\\ClotheStore.Domain\\obj\\",
+        "outputPath": "C:\\Desarrollo\\Clothe-Store\\Clothe-Store-Api\\ClotheStore.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -114,8 +121,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://lefgit.pkgs.visualstudio.com/_packaging/LifeExtensionFeed/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {

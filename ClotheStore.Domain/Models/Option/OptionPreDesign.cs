@@ -1,0 +1,11 @@
+﻿namespace ClotheStore.Domain.Models.Option
+{
+    public class OptionPreDesign
+    {
+        public Guid ImageId { get; set; }
+        public string BlobName { get; set; }
+        public string BlobUrl { get; set; }
+        public string ImageType { get; set; }
+        public string Category { get; set; }
+    }
+}
