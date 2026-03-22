@@ -19,7 +19,8 @@ namespace ClotheStore.Repository.EntityDataHandlers
             var parameters = new SqlParameter[]
             {
                 // Customization
-                new("@CartItemId", model!.CartItemId),
+                new("@CustomizationId", model!.CustomizationId),
+                new("@DesignId", model!.DesignId),
                 new("@IsHorizontalInverted", model.IsHorizontalInverted),
                 new("@IsVerticalInverted", model.IsVerticalInverted),
                 new("@IsFrontLocation", model.IsFrontLocation),
@@ -60,7 +61,8 @@ namespace ClotheStore.Repository.EntityDataHandlers
             var parameters = new SqlParameter[]
             {
                 // Customization
-                new("@CartItemId", model!.CartItemId),
+                new("@CustomizationId", model!.CustomizationId),
+                new("@DesignId", model!.DesignId),
                 new("@IsHorizontalInverted", model.IsHorizontalInverted),
                 new("@IsVerticalInverted", model.IsVerticalInverted),
                 new("@IsFrontLocation", model.IsFrontLocation),
@@ -103,7 +105,7 @@ namespace ClotheStore.Repository.EntityDataHandlers
                 new("@CustomizationId", model.CustomizationId)
             };
 
-            var result = await DeleteAsync($"dbo.Design_Delete {QueryHelper.GetParameters(parameters)}", parameters);
+            var result = await DeleteAsync($"dbo.sp_DeleteCustomization {QueryHelper.GetParameters(parameters)}", parameters);
             RefreshContext(model);
             return result;
         }

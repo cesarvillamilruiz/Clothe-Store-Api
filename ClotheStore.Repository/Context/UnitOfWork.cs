@@ -10,6 +10,7 @@ namespace ClotheStore.Repository.Context
         private IContactPreferenceRepository? _contactPreference;
         private ICartItemRepository? _cartItem;
         private IDesignRepository? _design;
+        private ICustomizationRepository? _customization;
 
         public IAddressRepository Address =>
             _address ??= new AddressRepository(context, repository);
@@ -22,6 +23,9 @@ namespace ClotheStore.Repository.Context
 
         public IDesignRepository Design =>
             _design ??= new DesignRepository(context, repository);
+
+        public ICustomizationRepository Customization =>
+            _customization ??= new CustomizationRepository(context, repository);
 
         public Task<int> SaveChangesAsync() => context.SaveChangesAsync();
 

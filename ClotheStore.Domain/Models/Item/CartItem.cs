@@ -12,6 +12,6 @@
         public int XLAmount { get; set; }
         public int XXLAmount { get; set; }
         public int XXXLAmount { get; set; }
-        public IEnumerable<Customization>? Customization { get; set; }
+        //public IEnumerable<Customization>? Customization { get; set; }
     }
 }

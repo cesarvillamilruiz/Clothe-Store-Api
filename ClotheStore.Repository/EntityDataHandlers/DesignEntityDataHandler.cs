@@ -21,7 +21,7 @@ namespace ClotheStore.Repository.EntityDataHandlers
                 new("@CustomizationId", model.DesignId)
             };
 
-            var result = await DeleteAsync($"dbo.Design_Delete {QueryHelper.GetParameters(parameters)}", parameters);
+            var result = await DeleteAsync($"dbo.sp_DeleteDesign {QueryHelper.GetParameters(parameters)}", parameters);
             RefreshContext(model);
             return result;
         }

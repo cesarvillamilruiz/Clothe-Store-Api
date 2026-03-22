@@ -17,7 +17,7 @@ namespace ClotheStore.Repository.Repositories
                 {
                     new("@addressId", addressId)
                 };
-            return await repository.GetAsync<Address>($"dbo.sp_GetAddress_ByKey {QueryHelper.GetParameters(parameters)}", parameters);
+            return await repository.GetAsync<Address>($"dbo.sp_GetAddress_ById {QueryHelper.GetParameters(parameters)}", parameters);
         }
 
         public async Task<IEnumerable<Address>> GetAddressesByUserId(Guid userId)

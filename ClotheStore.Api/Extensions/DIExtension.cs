@@ -30,6 +30,7 @@ namespace ClotheStore.Api.Extensions
             services.AddScoped<IOptionQueryService, OptionQueryService>();
             services.AddScoped<IBlobQueryService, BlobQueryService>();
             services.AddScoped<IDesignQueryService, DesignQueryService>();
+            services.AddScoped<ICustomizationQueryService, CustomizationQueryService>();
 
             // Command Services
             services.AddScoped<IUserCommandService, UserCommandService>();
@@ -38,6 +39,7 @@ namespace ClotheStore.Api.Extensions
             services.AddScoped<ICartItemCommandService, CartItemCommandService>();
             services.AddScoped<ICartCommandService, CartCommandService>();
             services.AddScoped<IDesignCommandService, DesignCommandService>();
+            services.AddScoped<ICustomizationCommandService, CustomizationCommandService>();
             return services;
         }
 
@@ -55,6 +57,7 @@ namespace ClotheStore.Api.Extensions
             services.AddScoped<IOptionRepository, OptionRepository>();
             services.AddScoped<IBlobRepository, BlobRepository>();
             services.AddScoped<IDesignRepository, DesignRepository>();
+            services.AddScoped<ICustomizationRepository, CustomizationRepository>();
             return services;
         }
     }

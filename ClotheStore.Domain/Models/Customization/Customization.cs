@@ -4,7 +4,7 @@
     {
         // Customization
         public Guid CustomizationId { get; set; }
-        public Guid CartItemId { get; set; }
+        public Guid DesignId { get; set; }
         public bool IsHorizontalInverted { get; set; }
         public bool IsVerticalInverted { get; set; }
         public bool IsFrontLocation { get; set; }

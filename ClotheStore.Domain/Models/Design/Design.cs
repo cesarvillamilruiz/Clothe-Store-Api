@@ -6,6 +6,6 @@
         public Guid UserId { get; set; }
         public Guid ProductId { get; set; }
         public string Name { get; set; }
-        public IEnumerable<Customization> Customizations { get; set; }
+        public IEnumerable<ClotheStore.Domain.Models.Customization.Customization> Customizations { get; set; }
     }
 }
