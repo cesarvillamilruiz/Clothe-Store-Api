@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "ClotheStore.Repository\\EntityDataHandlers\\CustomizationEntityDataHandler.cs",
               "ToolTip": "C:\\Desarrollo\\Clothe-Store\\Clothe-Store-Api\\ClotheStore.Repository\\EntityDataHandlers\\CustomizationEntityDataHandler.cs",
               "RelativeToolTip": "ClotheStore.Repository\\EntityDataHandlers\\CustomizationEntityDataHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwAsAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-20T02:47:08.869Z",
               "EditorCaption": ""
@@ -59,8 +59,7 @@
               "RelativeToolTip": "ClotheStore.Domain\\Models\\Customization\\Customization.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T02:46:01.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T02:46:01.32Z"
             },
             {
               "$type": "Document",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "ClotheStore.Repository\\Repositories\\CustomizationRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T02:45:19.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T02:45:19.863Z"
             },
             {
               "$type": "Document",
@@ -85,8 +83,7 @@
               "RelativeToolTip": "ClotheStore.Domain\\Repositories\\ICustomizationRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T02:44:55.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T02:44:55.309Z"
             },
             {
               "$type": "Document",
@@ -98,8 +95,7 @@
               "RelativeToolTip": "ClotheStore.Domain\\Repositories\\IDesignRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T01:42:21.299Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-20T01:42:21.299Z"
             },
             {
               "$type": "Document",
@@ -111,8 +107,7 @@
               "RelativeToolTip": "ClotheStore.Api\\Controllers\\DesignController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-06T02:32:17.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-06T02:32:17.643Z"
             }
           ]
         }
