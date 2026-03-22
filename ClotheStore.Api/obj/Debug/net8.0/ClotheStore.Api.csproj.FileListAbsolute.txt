@@ -296,7 +296,6 @@ C:\Desarrollo\Clothe-Store\Clothe-Store-Api\ClotheStore.Api\obj\Debug\net8.0\sta
 C:\Desarrollo\Clothe-Store\Clothe-Store-Api\ClotheStore.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ClotheStore.Api.props
 C:\Desarrollo\Clothe-Store\Clothe-Store-Api\ClotheStore.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ClotheStore.Api.props
 C:\Desarrollo\Clothe-Store\Clothe-Store-Api\ClotheStore.Api\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Desarrollo\Clothe-Store\Clothe-Store-Api\ClotheStore.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Desarrollo\Clothe-Store\Clothe-Store-Api\ClotheStore.Api\obj\Debug\net8.0\ClotheSt.837F20AA.Up2Date
 C:\Desarrollo\Clothe-Store\Clothe-Store-Api\ClotheStore.Api\obj\Debug\net8.0\ClotheStore.Api.dll
 C:\Desarrollo\Clothe-Store\Clothe-Store-Api\ClotheStore.Api\obj\Debug\net8.0\refint\ClotheStore.Api.dll
