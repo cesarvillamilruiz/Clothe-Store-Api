@@ -18,7 +18,7 @@ namespace ClotheStore.Repository.EntityDataHandlers
 
             var parameters = new SqlParameter[]
             {
-                new("@CustomizationId", model.DesignId)
+                new("@DesignId", model.DesignId)
             };
 
             var result = await DeleteAsync($"dbo.sp_DeleteDesign {QueryHelper.GetParameters(parameters)}", parameters);
@@ -35,9 +35,9 @@ namespace ClotheStore.Repository.EntityDataHandlers
             {
                 new("@DesignId", model!.DesignId),
                 new("@UserId", model.UserId),
-                new("@ProductId", model.ProductId),
+                new("@ProductIdList", string.Join(",", model.ProductId)),
                 new("@Name", model.Name)
-            };            
+            };
 
             var newModel = await InsertAsync<Design>($"dbo.sp_InsertDesign {QueryHelper.GetParameters(parameters)}", parameters);
             RefreshContext(model, newModel);
@@ -53,7 +53,7 @@ namespace ClotheStore.Repository.EntityDataHandlers
             {
                 new("@DesignId", model!.DesignId),
                 new("@UserId", model.UserId),
-                new("@ProductId", model.ProductId),
+                new("@ProductIdList", string.Join(",", model.ProductId)),
                 new("@Name", model.Name)
             };
 

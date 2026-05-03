@@ -4,7 +4,7 @@ namespace ClotheStore.Application.Queries
 {
     public interface IDesignQueryService
     {
-        Task<IEnumerable<DesignVM>> GetDesignsByUserId();
+        Task<IEnumerable<DesignVM>> GetDesignListByUserId();
         Task<DesignVM> GetDesignById(Guid designId);
     }
 }

@@ -20,7 +20,7 @@ namespace ClotheStore.Repository.Repositories
             return await repository.GetAsync<Design>($"dbo.sp_GetDesign_ById {QueryHelper.GetParameters(parameters)}", parameters);
         }
 
-        public async Task<IEnumerable<Design>> GetDesignsByUserId(Guid userId)
+        public async Task<IEnumerable<Design>> GetDesignListByUserId(Guid userId)
         {
             var parameters = new SqlParameter[]
                 {

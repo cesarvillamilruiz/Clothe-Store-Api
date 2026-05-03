@@ -15,8 +15,8 @@ namespace ClotheStore.Api.Controllers
         IDesignCommandService designCommandService) : ControllerBase
     {
         [HttpGet]        
-        public async Task<Results<BadRequest, NotFound, Ok<IEnumerable<DesignVM>>>> GetDesignsByUserId() =>
-                TypedResults.Ok(await designQueryService.GetDesignsByUserId());
+        public async Task<Results<BadRequest, NotFound, Ok<IEnumerable<DesignVM>>>> GetDesignListByUserId() =>
+                TypedResults.Ok(await designQueryService.GetDesignListByUserId());
 
         [HttpGet]
         public async Task<Results<BadRequest, NotFound, Ok<DesignVM>>> GetDesignById(Guid designId) =>

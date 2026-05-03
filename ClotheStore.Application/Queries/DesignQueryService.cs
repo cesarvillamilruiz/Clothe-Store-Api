@@ -9,7 +9,7 @@ namespace ClotheStore.Application.Queries
     public class DesignQueryService(IDesignRepository designRepository,
         IHttpContextAccessor contextAccessor) : IDesignQueryService
     {
-        public async Task<IEnumerable<DesignVM>> GetDesignsByUserId()
+        public async Task<IEnumerable<DesignVM>> GetDesignListByUserId()
         {
             var user = contextAccessor.HttpContext?.User;
             var claims = ((ClaimsIdentity)user.Identity!)?.Claims;
@@ -17,13 +17,11 @@ namespace ClotheStore.Application.Queries
             Guid.TryParse(claims.FirstOrDefault(c => c.Type == "http://schemas.microsoft.com/identity/claims/objectidentifier")?.Value,
                 out Guid b2CObjectId);
 
-            return (await designRepository.GetDesignsByUserId(b2CObjectId)).Adapt<List<DesignVM>>();
+            return (await designRepository.GetDesignListByUserId(b2CObjectId)).Adapt<List<DesignVM>>();
         }
 
         public async Task<DesignVM> GetDesignById(Guid designId)
         {
-            // TODO:  validate is is authenticated
-
             return (await designRepository.GetDesignById(designId)).Adapt<DesignVM>();
         }
     }

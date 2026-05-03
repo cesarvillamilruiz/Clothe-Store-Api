@@ -5,7 +5,7 @@ namespace ClotheStore.Domain.Repositories
     public interface IDesignRepository
     {
         Task<Design> GetDesignById(Guid designId);
-        Task<IEnumerable<Design>> GetDesignsByUserId(Guid userId);
+        Task<IEnumerable<Design>> GetDesignListByUserId(Guid userId);
         void Insert(Design model);
         void Update(Design model);
         void Delete(Design model);
