@@ -1,4 +1,4 @@
-﻿using ClotheStore.Application.Queries;
+using ClotheStore.Application.Queries;
 using ClotheStore.Application.ViewModels;
 using ClotheStore.Domain.Models.Customization;
 using ClotheStore.Domain.Models.Design;

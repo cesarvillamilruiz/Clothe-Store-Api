@@ -67,6 +67,8 @@ builder.Services.AddSingleton(x =>
 
 var app = builder.Build();
 
+app.UseMiddleware<ExceptionHandlerMiddleware>();
+
 app.UseCors("AllowAll");
 
 // Configure the HTTP request pipeline.

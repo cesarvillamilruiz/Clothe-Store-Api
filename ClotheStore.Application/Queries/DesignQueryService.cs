@@ -1,4 +1,4 @@
-﻿using ClotheStore.Application.ViewModels;
+using ClotheStore.Application.ViewModels;
 using ClotheStore.Domain.Repositories;
 using Microsoft.AspNetCore.Http;
 using System.Security.Claims;

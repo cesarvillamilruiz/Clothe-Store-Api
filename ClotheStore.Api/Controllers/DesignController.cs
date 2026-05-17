@@ -23,11 +23,11 @@ namespace ClotheStore.Api.Controllers
                 TypedResults.Ok(await designQueryService.GetDesignById(designId));
 
         [HttpPost]
-        public async Task<Results<BadRequest, NotFound, Ok<DesignVM>>> Insert(DesignVM design) =>
+        public async Task<Results<BadRequest, NotFound, Ok<DesignVM>>> Insert([FromBody] DesignVM design) =>
                 TypedResults.Ok(await designCommandService.Insert(design));
 
         [HttpPut]
-        public async Task<Results<BadRequest, NotFound, Ok<DesignVM>>> Update(DesignVM design) =>
+        public async Task<Results<BadRequest, NotFound, Ok<DesignVM>>> Update([FromBody] DesignVM design) =>
                 TypedResults.Ok(await designCommandService.Update(design));
 
         [HttpDelete]
