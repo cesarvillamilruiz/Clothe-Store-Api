@@ -30,6 +30,7 @@ namespace ClotheStore.Repository.Context
         public virtual DbSet<OptionSize> OptionSize { get; set; }
         public virtual DbSet<OptionFont> OptionFont { get; set; }
         public virtual DbSet<Design> Design { get; set; }
+        public virtual DbSet<User> User { get; set; }
 
         #endregion DbSet Properties
 
@@ -102,6 +103,9 @@ namespace ClotheStore.Repository.Context
                                 break;
                             case OptionSize OptionSize:
                                 entityDataHandler = new SizeEntityDataHandler(this);
+                                break;
+                            case User User:
+                                entityDataHandler = new UserEntityDataHandler(this);
                                 break;
                             default:
                                 continue;

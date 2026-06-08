@@ -6,5 +6,6 @@ namespace ClotheStore.Domain.Repositories
     {
         Task<bool> IsExistingUser(Guid userId);
         Task CreateUser(User newUser);
+        Task UpdateUser(User user);
     }
 }

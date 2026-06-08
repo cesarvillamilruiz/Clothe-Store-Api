@@ -25,6 +25,11 @@ namespace ClotheStore.Api.Controllers
         public async Task<Results<BadRequest, NotFound, Ok<bool>>> LogIn() =>
             TypedResults.Ok(await _userCommandService.LogIn());
 
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult LogOut([FromQuery] string postLogoutRedirectUri = "") =>
+            Ok(_userCommandService.GetLogOutUrl(postLogoutRedirectUri));
+
         #endregion
     }
 }

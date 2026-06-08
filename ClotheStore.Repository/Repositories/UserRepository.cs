@@ -1,6 +1,7 @@
 ﻿using ClotheStore.Domain.Core;
 using ClotheStore.Domain.Models.User;
 using ClotheStore.Domain.Repositories;
+using ClotheStore.Repository.Context;
 using Dapper;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Options;
@@ -11,11 +12,14 @@ namespace ClotheStore.Repository.Repositories
     public class UserRepository : IUserRepository
     {
         private readonly AppSettings _appSettings;
+        private readonly ApplicationDbContext _context;
 
-        public UserRepository(IOptions<AppSettings> options)
+        public UserRepository(IOptions<AppSettings> options, ApplicationDbContext context)
         {
             _appSettings = options.Value;
+            _context = context;
         }
+
         public async Task<bool> IsExistingUser(Guid userId)
         {
             try
@@ -31,27 +35,19 @@ namespace ClotheStore.Repository.Repositories
             {
                 string err = ex.Message;
                 return false;
-            }            
+            }
         }
 
         public async Task CreateUser(User newUser)
         {
-            using (IDbConnection db = new SqlConnection(_appSettings.ConnectionStrings.Default))
-            {
-                _ = await db.ExecuteAsync(
-                    "[dbo].[sp_InsertUser]",
-                    param: new
-                    {
-                        newUser.UserId,
-                        newUser.Email,
-                        newUser.EmailProvider,
-                        newUser.Provider,
-                        newUser.FirstName,
-                        newUser.LastName
-                    },
-                    commandType: CommandType.StoredProcedure);
+            _context.User.Add(newUser);
+            await _context.SaveChangesAsync();
+        }
 
-            }
+        public async Task UpdateUser(User user)
+        {
+            _context.User.Update(user);
+            await _context.SaveChangesAsync();
         }
     }
 }

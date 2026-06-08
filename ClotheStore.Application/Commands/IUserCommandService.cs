@@ -4,5 +4,6 @@
     {
         Task<bool> LogIn();
         Task SignUp();
+        string GetLogOutUrl(string postLogoutRedirectUri);
     }
 }

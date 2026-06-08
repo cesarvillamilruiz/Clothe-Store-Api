@@ -10,6 +10,7 @@ using System.Security.Claims;
 namespace ClotheStore.Application.Commands
 {
     public class DesignCommandService(IDesignQueryService designQueryService,
+            ICustomizationCommandService customizationCommandService,
             IHttpContextAccessor contextAccessor,
             IUnitOfWork unitOfWork) : IDesignCommandService
     {
@@ -26,22 +27,25 @@ namespace ClotheStore.Application.Commands
                 return null;
             }
 
+            var customizationVMs = model.Customizations;
+            model.Customizations = [];
+
             var entity = model.Adapt<Design>();
             entity.UserId = b2CObjectId;
             entity.DesignId = Guid.NewGuid();
 
-            if (entity.Customizations != null)
+            unitOfWork.Design.Insert(entity);
+            await unitOfWork.SaveChangesAsync();
+
+            if (customizationVMs != null)
             {
-                foreach (var customization in entity.Customizations)
+                foreach (var customizationVM in customizationVMs)
                 {
-                    customization.DesignId = entity.DesignId;
-                    customization.CustomizationId = Guid.NewGuid();
+                    customizationVM.DesignId = entity.DesignId;
+                    await customizationCommandService.Insert(customizationVM);
                 }
             }
 
-            unitOfWork.Design.Insert(entity);
-
-            await unitOfWork.SaveChangesAsync();
             return await designQueryService.GetDesignById(entity.DesignId);
         }
 
