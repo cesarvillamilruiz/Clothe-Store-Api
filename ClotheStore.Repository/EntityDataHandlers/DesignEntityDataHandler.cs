@@ -36,7 +36,8 @@ namespace ClotheStore.Repository.EntityDataHandlers
                 new("@DesignId", model!.DesignId),
                 new("@UserId", model.UserId),
                 new("@ProductIdList", string.Join(",", model.ProductId)),
-                new("@Name", model.Name)
+                new("@Name", model.Name),
+                new("@Location", model.Location.ToString().ToLower())
             };
 
             var newModel = await InsertAsync<Design>($"dbo.sp_InsertDesign {QueryHelper.GetParameters(parameters)}", parameters);
@@ -54,7 +55,8 @@ namespace ClotheStore.Repository.EntityDataHandlers
                 new("@DesignId", model!.DesignId),
                 new("@UserId", model.UserId),
                 new("@ProductIdList", string.Join(",", model.ProductId)),
-                new("@Name", model.Name)
+                new("@Name", model.Name),
+                new("@Location", model.Location.ToString().ToLower())
             };
 
             var newModel = await InsertAsync<Design>($"dbo.sp_UpdateDesign {QueryHelper.GetParameters(parameters)}", parameters);

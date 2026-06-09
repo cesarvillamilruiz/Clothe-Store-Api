@@ -1,4 +1,6 @@
-﻿namespace ClotheStore.Application.ViewModels
+﻿using ClotheStore.Domain.Enum.Design;
+
+namespace ClotheStore.Application.ViewModels
 {
     public class CustomizationVM
     {
@@ -7,7 +9,7 @@
         public Guid DesignId { get; set; }
         public bool IsHorizontalInverted { get; set; }
         public bool IsVerticalInverted { get; set; }
-        public bool IsFrontLocation { get; set; }
+        public Location Location { get; set; }
         public int ZIndex { get; set; }
         public int TopDistance { get; set; }
         public int LeftDistance { get; set; }
