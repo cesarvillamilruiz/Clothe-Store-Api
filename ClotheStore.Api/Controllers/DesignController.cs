@@ -12,15 +12,20 @@ namespace ClotheStore.Api.Controllers
     [Route("api/[controller]/[action]")]
     [AllowAnonymous]
     public class DesignController(IDesignQueryService designQueryService,
-        IDesignCommandService designCommandService) : ControllerBase
+        IDesignCommandService designCommandService,
+        ICustomizationQueryService customizationQueryService) : ControllerBase
     {
-        [HttpGet]        
+        [HttpGet]
         public async Task<Results<BadRequest, NotFound, Ok<IEnumerable<DesignVM>>>> GetDesignListByUserId() =>
                 TypedResults.Ok(await designQueryService.GetDesignListByUserId());
 
         [HttpGet]
         public async Task<Results<BadRequest, NotFound, Ok<DesignVM>>> GetDesignById(Guid designId) =>
                 TypedResults.Ok(await designQueryService.GetDesignById(designId));
+
+        [HttpGet]
+        public async Task<Results<BadRequest, NotFound, Ok<IEnumerable<CustomizationVM>>>> GetCustomizationsByDesignId(Guid designId) =>
+                TypedResults.Ok(await customizationQueryService.GetCustomizationsByDesignId(designId));
 
         [HttpPost]
         public async Task<Results<BadRequest, NotFound, Ok<DesignVM>>> Insert([FromBody] DesignVM design) =>
