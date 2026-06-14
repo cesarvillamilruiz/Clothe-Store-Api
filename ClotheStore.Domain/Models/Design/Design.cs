@@ -9,6 +9,7 @@ namespace ClotheStore.Domain.Models.Design
         public List<Guid> ProductId { get; set; }
         public string Name { get; set; }
         public Location Location { get; set; }
+        public string? ColorName { get; set; }
         public List<Customization.Customization> Customizations { get; set; }
     }
 }
