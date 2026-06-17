@@ -20,8 +20,9 @@ namespace ClotheStore.Application.ViewModels
         // Image
         public string? BlobName { get; set; }
         public string? BlobUrl { get; set; }
+        public string? ImageUrl { get; set; } // sent by the Angular client; mapped to BlobUrl on persist
         public string? ImageType { get; set; } // upload | preview | final | predesign
-        public string? Category { get; set; }        
+        public string? Category { get; set; }
 
         // Text
         public Guid? FontId { get; set; }

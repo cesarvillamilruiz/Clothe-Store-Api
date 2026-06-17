@@ -1,6 +1,5 @@
 using ClotheStore.Application.Queries;
 using ClotheStore.Application.ViewModels;
-using ClotheStore.Domain.Models.Customization;
 using ClotheStore.Domain.Models.Design;
 using ClotheStore.Domain.Repositories;
 using Mapster;
@@ -42,6 +41,7 @@ namespace ClotheStore.Application.Commands
                 foreach (var customizationVM in customizationVMs)
                 {
                     customizationVM.DesignId = entity.DesignId;
+                    NormalizeImageUrl(customizationVM);
                     await customizationCommandService.Insert(customizationVM);
                 }
             }
@@ -56,8 +56,11 @@ namespace ClotheStore.Application.Commands
             var entity = await unitOfWork.Design.GetDesignById(model.DesignId);
             if (entity == null) throw new KeyNotFoundException("Design not found");
 
+            var userId = entity.UserId;
             entity = model.Adapt<Design>();
+            entity.UserId = userId;
             unitOfWork.Design.Update(entity);
+            await unitOfWork.SaveChangesAsync();
 
             var existingCustomizations = await unitOfWork.Customization.GetCustomizationsByDesignId(model.DesignId);
             var incomingCustomizations = model.Customizations ?? [];
@@ -65,28 +68,28 @@ namespace ClotheStore.Application.Commands
             foreach (var existing in existingCustomizations)
             {
                 if (!incomingCustomizations.Any(c => c.CustomizationId == existing.CustomizationId))
-                    unitOfWork.Customization.Delete(existing);
+                    await customizationCommandService.Delete(existing.CustomizationId);
             }
 
             foreach (var incoming in incomingCustomizations)
             {
+                incoming.DesignId = model.DesignId;
+                NormalizeImageUrl(incoming);
+
                 if (incoming.CustomizationId == Guid.Empty)
-                {
-                    var newCustomization = incoming.Adapt<Customization>();
-                    newCustomization.CustomizationId = Guid.NewGuid();
-                    newCustomization.DesignId = model.DesignId;
-                    unitOfWork.Customization.Insert(newCustomization);
-                }
+                    await customizationCommandService.Insert(incoming);
                 else
-                {
-                    var customization = incoming.Adapt<Customization>();
-                    customization.DesignId = model.DesignId;
-                    unitOfWork.Customization.Update(customization);
-                }
+                    await customizationCommandService.Update(incoming);
             }
 
-            await unitOfWork.SaveChangesAsync();
             return await designQueryService.GetDesignById(entity.DesignId);
+        }
+
+        // The Angular client sends the image location as ImageUrl, but persistence uses BlobUrl.
+        private static void NormalizeImageUrl(CustomizationVM customization)
+        {
+            if (string.IsNullOrEmpty(customization.BlobUrl) && !string.IsNullOrEmpty(customization.ImageUrl))
+                customization.BlobUrl = customization.ImageUrl;
         }
 
         public async Task<IEnumerable<DesignVM>> Delete(Guid designId)
