@@ -7,9 +7,9 @@ namespace ClotheStore.Domain.Enum.Design
     public enum Location
     {
         [EnumMember(Value = "front")]
-        Front,
+        front,
 
         [EnumMember(Value = "back")]
-        Back
+        back
     }
 }
